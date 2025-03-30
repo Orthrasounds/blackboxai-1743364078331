@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Vehicles - Electric Cars</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .car-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .specs-bg {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white">
+    <!-- Navigation (Same as index.html) -->
+    <nav class="fixed w-full z-50 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-white font-bold text-2xl">TESLA</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-gray-300 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="cars.html" class="text-white font-semibold px-3 py-2 text-sm">Vehicles</a>
+                    <a href="#" class="text-white hover:text-gray-300 px-3 py-2 text-sm font-medium">Energy</a>
+                    <a href="#" class="text-white hover:text-gray-300 px-3 py-2 text-sm font-medium">Charging</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-white hover:text-gray-300 px-3 py-2 text-sm font-medium">Shop</a>
+                    <a href="#" class="text-white hover:text-gray-300 px-3 py-2 text-sm font-medium">Account</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="text-white hover:text-gray-300">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20 pb-16">
+        <!-- Breadcrumbs -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-gray-600 hover:text-black">Home</a>
+                <span class="text-gray-400">/</span>
+                <span class="text-black font-medium">Vehicles</span>
+            </div>
+        </div>
+
+        <!-- Page Header -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Tesla Vehicle Lineup</h1>
+            <p class="mt-4 text-lg text-gray-600">Choose your electric vehicle</p>
+        </div>
+
+        <!-- Vehicle Grid -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Model S Card -->
+                <div class="car-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center">
+                        <img src="https://images.pexels.com/photos/1035108/pexels-photo-1035108.jpeg" alt="Tesla Model S" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold text-gray-900">Model S</h2>
+                        <p class="mt-2 text-gray-600">Plaid</p>
+                        <div class="mt-4 specs-bg p-4 rounded-lg">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <p class="text-sm text-gray-500">Range</p>
+                                    <p class="font-semibold">396 mi</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">0-60 mph</p>
+                                    <p class="font-semibold">1.99s</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Top Speed</p>
+                                    <p class="font-semibold">200 mph</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Seating</p>
+                                    <p class="font-semibold">5 Adults</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex flex-col space-y-3">
+                            <a href="#" class="bg-black text-white py-3 px-6 rounded text-center font-medium hover:bg-gray-800 transition">Order Now</a>
+                            <a href="#" class="border border-black text-black py-3 px-6 rounded text-center font-medium hover:bg-gray-100 transition">Demo Drive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model 3 Card -->
+                <div class="car-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center">
+                        <img src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg" alt="Tesla Model 3" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold text-gray-900">Model 3</h2>
+                        <p class="mt-2 text-gray-600">Dual Motor All-Wheel Drive</p>
+                        <div class="mt-4 specs-bg p-4 rounded-lg">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <p class="text-sm text-gray-500">Range</p>
+                                    <p class="font-semibold">341 mi</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">0-60 mph</p>
+                                    <p class="font-semibold">3.1s</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Top Speed</p>
+                                    <p class="font-semibold">162 mph</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Seating</p>
+                                    <p class="font-semibold">5 Adults</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex flex-col space-y-3">
+                            <a href="#" class="bg-black text-white py-3 px-6 rounded text-center font-medium hover:bg-gray-800 transition">Order Now</a>
+                            <a href="#" class="border border-black text-black py-3 px-6 rounded text-center font-medium hover:bg-gray-100 transition">Demo Drive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model X Card -->
+                <div class="car-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center">
+                        <img src="https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg" alt="Tesla Model X" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold text-gray-900">Model X</h2>
+                        <p class="mt-2 text-gray-600">Plaid</p>
+                        <div class="mt-4 specs-bg p-4 rounded-lg">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <p class="text-sm text-gray-500">Range</p>
+                                    <p class="font-semibold">348 mi</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">0-60 mph</p>
+                                    <p class="font-semibold">2.5s</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Top Speed</p>
+                                    <p class="font-semibold">163 mph</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Seating</p>
+                                    <p class="font-semibold">7 Adults</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex flex-col space-y-3">
+                            <a href="#" class="bg-black text-white py-3 px-6 rounded text-center font-medium hover:bg-gray-800 transition">Order Now</a>
+                            <a href="#" class="border border-black text-black py-3 px-6 rounded text-center font-medium hover:bg-gray-100 transition">Demo Drive</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tesla</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Investors</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Vehicles</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Model S</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Model 3</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Model X</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Model Y</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Energy</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Solar Panels</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Solar Roof</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Powerwall</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Find Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 Tesla, Inc.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
